@@ -65,7 +65,7 @@ func uploadPhoto(db *sql.DB) echo.HandlerFunc {
 		defer src.Close()
 
 		filePath := "./public/uploads/" + file.Filename
-		fileSrc := "http://127.0.0.1:9000/upploads/" + file.Filename
+		fileSrc := "http://127.0.0.1:9000/uploads/" + file.Filename
 		dst, err := os.Create(filePath)
 		if err != nil {
 			panic(err)
