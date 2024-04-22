@@ -1,3 +1,2 @@
 /public/uploads/*
-
-/database/*
+*.sqlite
